@@ -1,0 +1,14 @@
+<div class="card">
+  <h1 class="font-bold text-4xl mb-2">New Project</h1>
+  <%= form_with model: @project, class: "space-y-4" do |form| %>
+    <%= form.text_field :name,
+        required: true,
+        autofocus: true,
+        placeholder: "Project Name",
+        value: params[:name],
+        class: "text-field" %>
+
+        <%= form.submit "Create Project", class: "btn"  %>
+  <% end %>
+</div>
+
