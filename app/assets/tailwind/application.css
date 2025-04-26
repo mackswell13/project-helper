@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+
+@layer components {
+  .btn {
+    @apply w-full bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700;
+  }
+
+  .text-field {
+    @apply w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500
+  }
+
+  .card {
+    @apply max-w-md mx-auto mt-10 p-6 bg-white rounded shadow;
+  }
+}
