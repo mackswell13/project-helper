@@ -3,7 +3,7 @@
 
 @layer components {
   .btn {
-    @apply w-full bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700;
+    @apply bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700;
   }
 
   .text-field {

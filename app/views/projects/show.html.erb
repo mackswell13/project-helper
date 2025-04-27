@@ -1,1 +1,12 @@
-<h1><%= @project.name %></h1>
+<div class = "flex flex-col space-y-2 w-full">
+  <h1 class="text-4xl font-bold"><%= @project.name %></h1>
+
+  <div class="p-6 bg-white rounded shadow">
+    <div class="flex flex-row justify-between">
+      <h2 class="text-2xl font-medium">Tasks</h2>
+      <%= link_to "New Task", new_project_task_path(@project), class: "btn" %>
+    </div>
+
+    <%= render @tasks %>
+  </div>
+</div>
